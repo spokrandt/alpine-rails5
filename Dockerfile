@@ -7,7 +7,7 @@ ENV BUILD_PACKAGES="curl-dev ruby-dev build-base" \
 RUN \
   apk --update --upgrade add $BUILD_PACKAGES $RUBY_PACKAGES $DEV_PACKAGES && \
   gem install -N bundler --pre
-
+ 
 RUN \
   gem install -N pkg-config -v "~> 1.1" && \
   gem install -N nokogiri && \
