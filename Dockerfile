@@ -24,6 +24,4 @@ RUN \
   find / -type f -iname \*.apk-new -delete && \
   rm -rf /var/cache/apk/* && \
   rm -rf /usr/lib/lib/ruby/gems/*/cache/* && \
-  rm -rf ~/.gem \
-  mkdir /app
-
+  rm -rf ~/.gem 
