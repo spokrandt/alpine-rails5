@@ -13,6 +13,7 @@ RUN \
   gem install -N nokogiri && \
   gem install -N rails --version "$RAILS_VERSION" && \
   gem install -N public_suffix -v '3.0.2' && \
+  gem install addressable -v '2.5.2' && \
   echo 'gem: --no-document' >> ~/.gemrc && \
   cp ~/.gemrc /etc/gemrc && \
   chmod uog+r /etc/gemrc && \
