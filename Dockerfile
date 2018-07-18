@@ -1,5 +1,5 @@
 FROM alpine:latest
-ENV BUILD_PACKAGES="curl-dev ruby-dev build-base" \
+ENV BUILD_PACKAGES="curl-dev ruby-dev build-base python2" \
     DEV_PACKAGES="zlib-dev libxml2-dev libxslt-dev tzdata yaml-dev sqlite-dev postgresql-dev mysql-dev libxml2-dev" \
     RUBY_PACKAGES="ruby ruby-io-console ruby-json yaml nodejs" \
     RAILS_VERSION="5.2.0"
