@@ -6,7 +6,8 @@ ENV BUILD_PACKAGES="curl-dev ruby-dev build-base python2 bash git" \
  
 RUN \
   apk --update --upgrade add $BUILD_PACKAGES $RUBY_PACKAGES $DEV_PACKAGES && \
-  gem install -N bundler --pre
+  gem install -N bundler --pre && \
+  pip install --isolated Flask
  
 RUN \
   gem install -N pkg-config -v "~> 1.1" && \
